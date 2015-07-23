@@ -1,0 +1,52 @@
+
+/* For Bouncing ball animation */
+.bounce_ball {
+  animation: bounce 1.5s infinite;
+  animation-timing-function: linear;
+  background: radial-gradient(circle at 50px 50px, #74B2F5, #0C112B);
+  border-radius: 50%;
+  display: block;
+  height: 150px;
+  margin: 0 auto !important;
+  position: relative;
+  top: 190px;
+  width: 150px;
+}
+
+.ball-shadow {
+  animation-timing-function: linear;
+  background: radial-gradient(ellipse at center, rgba(49,65,91,0.55) 0%,rgba(30,87,153,0.03) 61%,rgba(30,87,153,0) 64%); /* W3C */  display: block;
+  height: 30px;
+  margin: 0 auto !important;
+  position: relative;
+  top: 136px;
+  width: 150px;
+}
+
+
+/* Transition Section */
+
+.burger-close {
+  height: 100px;
+  margin: 100px auto 0 auto !important;
+  width: 119px;
+  cursor: pointer;
+}
+
+.burger-close .line {
+  height: 15%;
+  width: 100%;
+  background-color: rgb(31, 63, 108);
+  margin-bottom: 19%;
+}
+
+.burger-close[open="true"] .line.bottom {
+  opacity: 0;
+  transform: scale(5,0);
+}
+.burger-close[open="true"] .line.middle {
+  transform: rotate(-45deg) translateY(-160%);
+}
+.burger-close[open="true"] .line.top {
+  transform: rotate(45deg)translateY(160%);
+}
